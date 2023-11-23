@@ -1,0 +1,338 @@
+@import 'geral.css';
+
+#nav1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: rgba(28, 26, 15, .5);
+    transition:.3s;
+    z-index: 999;
+}
+    
+.carrinho img{
+    width: 45px;
+    height: 45x;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+
+#nav1:hover{
+    background:rgba(255, 255, 255, .6);
+    color: #000;
+}
+
+#nav1.tran{
+    height: 60px;
+    background-color: #1c1a0f;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+}  
+
+#nav1.tran .carrinho img{
+    margin-right: 10px;
+    height: 40px;
+    width: auto;
+   position: static;
+}
+
+#nav1.tran p{
+    display: none;
+}
+
+#nav1.tran ul{
+    margin-top: 0px;
+}
+
+#nav1.tran ul li a{
+    margin-left: 50px;
+}
+
+#dg{
+    width: 45%;
+    height: auto;
+}
+
+.vce{
+    font-size: 20px;
+}
+
+nav ul{
+    margin-top: 15px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a{
+    margin-left: 20px;
+    font-size: 18px;
+    color: #daa520;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: arial;
+    transition: .1s;
+}
+
+
+nav ul li a:hover{
+    border-bottom: 2px solid #daa520;
+}
+
+section{
+    height: auto;
+}
+
+#show{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+#ft {
+    width: 100vw;
+}
+
+.fade {
+    animation: fade 3.5s ease-in-out infinite;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#cole{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rel, #ace, #cam, #blu, #cal, #ten{
+    width: 100%;
+    height: 115vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.co{
+    width: 100%;
+}
+
+.ver{
+    width: 230px;
+    height: 45px;
+    border: 2px solid white;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    right: 100px;
+    margin-bottom: -350px;
+}
+
+.ver:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.ver1{
+    width: 230px;
+    height: 45px;
+    border: 2px solid #000;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    right: 100px;
+    margin-bottom: -350px;
+}
+
+.ver1:hover{
+    background-color: #000;
+    color: #ffffff;
+}
+
+.nc{
+    font-size: 24px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.rodape{
+    width: 100%;
+    height: 200px;
+    background-color: #1c1a0f;
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: #daa520;
+    line-height: 30px;
+}
+
+.rodape a:hover{
+    color: #fff;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    margin-left: 20px;
+}
+
+.s{
+    margin-top: 20px;
+    width: 100px;
+}
+
+.c{
+    margin-top: 30px;
+    width: 150px;
+}
+
+.redes{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.rr{
+    margin-top: 20px;
+}
+
+.rs{
+    width: 40px;
+    margin-right: 30px;
+}
+
+.rodape p {
+    color: #daa520;
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .carrinho{
+        width: 30px;
+    }
+
+    #nav1.tran .carrinho{
+        margin-right: 25px;
+    }
+
+    .vce{
+        font-size: 16px;
+    }
+
+    #nav1 {
+        height: auto;
+    }
+
+    #nav1.tran .vce{
+        display: none;
+    }
+
+    #nav1.tran img {
+        width: 85px;
+        height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    #nav1.tran ul li a {
+        margin-left: 8px;
+        font-size: 12px;
+    }
+
+    .slide{
+    height: 100%;
+    width: auto;
+    }
+
+    #cole {
+        margin-top: 30px;
+    }
+
+    #rel, #ace, #cam, #blu, #cal, #ten {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .ver, .ver1 {
+        width: 120px;
+        height: auto;
+        margin-right: 0;
+        right: 15px;
+        margin-bottom:  -80px;
+    }
+
+    .nc {
+        line-height: normal;
+        font-size: 18px;
+        
+    }
+
+    .rodape{
+        height: 200px;
+    }
+
+    .link {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .s, .c{
+        height: auto;
+        width: 80px;
+    }
+
+    .redes {
+        margin-top: 10px;
+        margin-right: 30px;
+        text-align: center;
+    }
+
+    .rs {
+        margin-right: 10px;
+        width: 30px;
+    }
+
+    .rodape p{
+        font-size: 12px;
+        margin-top: 180px;
+    }
+
+    .rodape a{
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
